@@ -1,0 +1,40 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f0f0f0;
+    font-family: sans-serif;
+}
+
+/* Configuro el tablero con Grid */
+
+#tablero {
+    display: grid;
+    /* Creo 8 columnas del mismo tamaño */
+    grid-template-columns: repeat(8, 60px);
+    /* Creo 8 filas del mismo tamaño */
+    grid-template-rows: repeat(8, 60px);
+    border: 2px solid #333;
+    /* Toque estético */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); 
+}
+
+/* Clases base para las casillas que asigno desde JS */
+
+.casilla {
+    width: 60px;
+    height: 60px;
+    /* Configuro Flexbox dentro de la casilla por si hacemos el Bonus de las piezas */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px; 
+}
+
+.blanca {
+    background-color: #eee;
+}
+
+.negra {
+    background-color: #444;
+}
