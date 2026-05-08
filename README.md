@@ -14,7 +14,7 @@ Un generador dinámico de tableros de 8x8 que utiliza lógica matemática para e
 ### 2. Mini-juego de Salto: Abducción en la Granja 🐄🛸
 Un juego de scroll lateral donde la precisión es la clave para la supervivencia.
 - **Temática:** Una vaca debe esquivar los intentos de abducción de un OVNI en un campo nocturno.
-- **Tecnologías:** CSS Animations (@keyframes), JavaScript Event Listeners, Lógica de colisión mediante `getBoundingClientRect()`, y HTML.
+- **Tecnologías:** CSS Animations (@keyframes), JavaScript Event Listeners, Lógica de colisión mediante `getBoundingClientRect()` y HTML.
 
 ---
 
