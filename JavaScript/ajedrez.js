@@ -2,8 +2,10 @@
 const tablero = document.getElementById('tablero');
 
 // Defino el orden de las piezas principales para las filas de los extremos
-const piezasNegras = ['♜', '♞', '♝', '♛', '♚', '♝', '♞', '♜'];
-const piezasBlancas = ['♖', '♘', '♗', '♕', '♔', '♗', '♘', '♖'];
+// Las piezas negras las represento con emojis de personajes malvados
+const piezasNegras = ['🧟', '👹', '💀', '🧛', '👺', '💀', '👹', '🧟'];
+// Las piezas blancas las represento con emojis de personajes buenos
+const piezasBlancas = ['👼', '🦄', '🕊️', '🧚‍♀️', '🧙‍♂️', '🕊️', '🦄', '👼'];
 
 // Inicio un bucle para crear las 8 filas del tablero
 for (let fila = 0; fila < 8; fila++) {
@@ -33,10 +35,10 @@ for (let fila = 0; fila < 8; fila++) {
             casilla.textContent = piezasNegras[columna];
         } else if (fila === 1) {
             // Fila 1: Todos son peones negros
-            casilla.textContent = '♟';
+            casilla.textContent = '🧠';
         } else if (fila === 6) {
             // Fila 6: Todos son peones blancos
-            casilla.textContent = '♙';
+            casilla.textContent = '✨';
         } else if (fila === 7) {
             // Fila 7: Asigno la pieza blanca que toca según el número de columna actual
             casilla.textContent = piezasBlancas[columna];
