@@ -1,0 +1,72 @@
+
+/* ESTILOS DEL MENÚ PRINCIPAL */
+
+
+body {
+    background-color: #1e1e2f;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Ocupa toda la altura de la pantalla */
+    margin: 0;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 5px;
+}
+
+header p {
+    color: #a0a0b5;
+    font-size: 1.2rem;
+}
+
+/* Contenedor Flexbox para poner las tarjetas una al lado de la otra */
+.contenedor-menu {
+    display: flex;
+    gap: 30px; /* Espacio entre los botones */
+}
+
+/* Diseño de cada botón/tarjeta */
+.tarjeta {
+    background-color: #2a2a40;
+    width: 250px;
+    padding: 30px 20px;
+    border-radius: 15px;
+    text-align: center;
+    text-decoration: none; /* Quitamos la línea fea de los enlaces */
+    color: white;
+    border: 2px solid transparent;
+    transition: all 0.3s ease; /* Para que la animación al pasar el ratón sea suave */
+}
+
+.tarjeta .icono {
+    font-size: 60px;
+    margin-bottom: 15px;
+}
+
+.tarjeta h2 {
+    margin: 0 0 10px 0;
+    font-size: 1.5rem;
+}
+
+.tarjeta p {
+    color: #a0a0b5;
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+/* Efecto al pasar el ratón por encima (Hover) */
+.tarjeta:hover {
+    transform: translateY(-10px); /* El botón "salta" un poco hacia arriba */
+    border-color: #8a2be2; /* Borde morado brillante */
+    box-shadow: 0 10px 20px rgba(138, 43, 226, 0.3); /* Sombra morada */
+}
