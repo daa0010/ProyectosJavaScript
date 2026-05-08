@@ -1,0 +1,88 @@
+/* Centrado general de la página */
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #282c34;
+    color: white;
+    font-family: sans-serif;
+    margin-top: 50px;
+}
+
+
+/* ESCENARIO */
+
+#juego {
+    width: 600px;
+    height: 300px;
+    background-color: #87CEEB; /* Un color de cielo azul */
+    border: 4px solid #fff;
+    border-radius: 10px;
+    
+    /* FUNDAMENTAL: Para poder mover cosas libremente dentro */
+    position: relative; 
+    /* FUNDAMENTAL: Oculta al enemigo cuando sale de la caja */
+    overflow: hidden; 
+}
+
+#marcador {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+
+/* ACTORES */
+
+#personaje {
+    width: 50px;
+    height: 50px;
+    font-size: 45px;
+    
+    /* Lo fijamos en el suelo a la izquierda */
+    position: absolute;
+    bottom: 0;
+    left: 50px; 
+}
+
+#obstaculo {
+    width: 40px;
+    height: 40px;
+    font-size: 35px;
+    
+    position: absolute;
+    bottom: 0;
+    /* Empieza escondido fuera del escenario por la derecha */
+    right: -50px; 
+    
+    /* Ejecutamos la animación del enemigo en bucle infinito */
+    animation: moverObstaculo 2s linear infinite;
+}
+
+
+/* ANIMACIONES (@keyframes) */
+
+/* 1. Animación del enemigo (Se mueve de derecha a izquierda) */
+@keyframes moverObstaculo {
+    0% { right: -50px; }
+    /* Atraviesa los 600px del escenario más un margen para desaparecer */
+    100% { right: 650px; } 
+}
+
+/* 2. Clase que añadiremos con JavaScript cuando el usuario pulse ESPACIO */
+.salto {
+    /* Ejecuta el salto en 0.5 segundos */
+    animation: animacionSalto 0.5s ease-out;
+}
+
+/* Animación del salto (Sube a 150px y baja a 0) */
+@keyframes animacionSalto {
+    0% { bottom: 0; }
+    40% { bottom: 150px; }
+    50% { bottom: 150px; } /* Una pequeñísima pausa en el aire */
+    100% { bottom: 0; }
+}
