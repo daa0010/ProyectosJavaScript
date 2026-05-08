@@ -23,7 +23,7 @@ Un juego de scroll lateral donde la precisión es la clave para la supervivencia
 He organizado el código de forma modular, separando recursos, estilos y scripts para garantizar la limpieza y escalabilidad del proyecto:
 
 ```text
-Nombre_Apellido_Proyecto/
+ProyectosJavaScript/
 ├── assets/
 │   └── fondominijuego.png  # Arte visual para el fondo del mini-juego.
 ├── CSS/
