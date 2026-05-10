@@ -50,7 +50,7 @@ body {
   height: 50px;
   font-size: 45px;
 
-  /* Lo fijamos en el suelo a la izquierda */
+  /* Lo fijo en el suelo a la izquierda */
   position: absolute;
   bottom: 0;
   left: 50px;
@@ -66,7 +66,7 @@ body {
   /* Empieza escondido fuera del escenario por la derecha */
   right: -50px;
 
-  /* Ejecutamos la animación del enemigo en bucle infinito */
+  /* Ejecuto la animación del enemigo en bucle infinito */
   animation: moverObstaculo 2s linear infinite;
 }
 
@@ -83,7 +83,7 @@ body {
   }
 }
 
-/* 2. Clase que añadiremos con JavaScript cuando el usuario pulse ESPACIO */
+/* 2. Clase del JavaScript cuando el usuario pulse ESPACIO */
 .salto {
   /* Ejecuta el salto en 0.5 segundos */
   animation: animacionSalto 0.5s ease-out;
@@ -99,7 +99,7 @@ body {
   }
   50% {
     bottom: 150px;
-  } /* Una pequeñísima pausa en el aire */
+  } /* Una pequeña pausa en el aire */
   100% {
     bottom: 0;
   }

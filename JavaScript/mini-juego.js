@@ -68,7 +68,7 @@ const intervaloColision = setInterval(function() {
         posPersonaje.bottom >= posObstaculo.top
     ) {
         
-        // ¡Colisión detectada! Cambio mi variable de control
+        // Colisión detectada, Cambio mi variable de control
         juegoTerminado = true;
         
         // Freno el obstáculo congelando su animación CSS

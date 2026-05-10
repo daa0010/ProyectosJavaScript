@@ -24,7 +24,7 @@ body {
 .casilla {
     width: 60px;
     height: 60px;
-    /* Configuro Flexbox dentro de la casilla por si hacemos el Bonus de las piezas */
+    /* Configuro Flexbox dentro de la casilla */
     display: flex;
     justify-content: center;
     align-items: center;
